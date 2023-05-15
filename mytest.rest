@@ -1,0 +1,21 @@
+GET http://localhost:5050/check
+
+###
+
+POST http://localhost:5050/user/register
+Content-Type: application/json
+
+{
+    "name": "Niraj",
+    "email": "ne@gmail.com",
+    "password": "password"
+}
+
+###
+POST http://localhost:5050/login
+Content-Type: application/json
+
+{
+    "email": "neerja@gmail.com",
+    "password": "password"
+}

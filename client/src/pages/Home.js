@@ -6,7 +6,7 @@ const Home = () => {
     <Layout>
         Home
     </Layout>
-
+    
   )
 
 }

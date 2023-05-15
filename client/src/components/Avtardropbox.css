@@ -1,0 +1,24 @@
+.sub-menu-wrap{
+    position: absolute;
+    top:100%;
+    right: 3%;
+    width:250px;
+    background-color: white; 
+}
+
+.sub-menu{
+    
+    overflow: hidden;
+
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#525252;
+    margin:12px 0;
+}
+.sub-menu-link p{
+    width:100%;
+}
