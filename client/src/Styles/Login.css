@@ -1,0 +1,35 @@
+.login-page{
+    display: grid;
+    border: #ffffff 2px solid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+    background-color: #111827;
+    background-color: #fff;
+  
+  }
+  .sub-login-page{
+    display: flex;
+    /* border: 2px solid #0f787a; */
+    box-shadow: 2px 2px 10px 2px #3f4b5b2b;
+    
+  }
+  .login-container{
+      padding: 4ch 5ch 2ch 5ch;
+      height: 58vh;
+      width: 45ch;
+      font-weight: bolder;
+      /* border: solid 5px rgb(201, 208, 229);
+      border-radius: 5px; */
+      background-color: #1F2937;
+      background-color: #53b6b9;
+      box-shadow: 2px 2px 2px 2px #3f4b5b2b;
+  }
+  
+  .login-form{
+    font-weight: bold;
+  }
+  .ant-form-item .ant-form-item-explain-error {
+    color: #131212;
+}

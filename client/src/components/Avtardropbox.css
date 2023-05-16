@@ -2,14 +2,22 @@
     position: absolute;
     top:100%;
     right: 3%;
+    height: 210px;
     width:250px;
     background-color: white; 
+    border: #cdc0c0 5px solid;
+    border-radius: 10px;
 }
 
 .sub-menu{
-    
     overflow: hidden;
 
+}
+.sub-menu-info{
+    display: flex;
+    font-weight: 500;
+    font-size: larger;
+    justify-content: space-around;
 }
 
 .sub-menu-link{
@@ -21,4 +29,12 @@
 }
 .sub-menu-link p{
     width:100%;
+}
+
+.sub-menu-logout{
+    display: grid;
+    justify-content: space-around;
+    align-items: space-around;
+    padding: 0 0 50px 0;
+
 }

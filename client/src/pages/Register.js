@@ -1,5 +1,6 @@
 import React from 'react'
 import Spinner from '../components/Spinner';
+import "../Styles/Register.css"
 import {
     Button,
     Checkbox,

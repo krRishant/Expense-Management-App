@@ -1,11 +1,15 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, } from 'antd';
-import Avtardropbox from '../Avtardropbox.js';
+import Avtardropbox from '../Avtardropbox';
+// import Avtardropbox from '../Avtardropbox.js';
 // const url = 'https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg';
 const Headers = () => {
-    const [change, setChange] = useState(false);
+    const [flag, setflag] = useState(false);
+    function displayuser (){
+        setflag(!flag);
+    }
     return (
         <>
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -18,17 +22,18 @@ const Headers = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                {/* <Link className="nav-link active" aria-current="page" to="/" >Home</Link> */}
-                            
-                                    <Avatar
-                                        style={{
-                                            backgroundColor: '#87d068',
-                                            marginRight:'40px',
-                                        }}
-                                        onClick={change}
-                                        icon={<UserOutlined />}
-                                    />
-                                    <Avtardropbox />
+                                <Avatar
+                                    style={{
+                                        backgroundColor: '#87d068',
+                                        marginRight: '40px',
+
+                                    }}
+                                    onClick={displayuser}
+                                    icon={<UserOutlined />}
+                                />
+                                {flag && <Avtardropbox />}
+                                
+                                
                             </li>
                         </ul>
                     </div>

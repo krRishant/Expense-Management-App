@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-// import Layout from '../components/Layouts/Layout'
+import '../Styles/Login.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, message } from 'antd';
@@ -41,12 +41,13 @@ const Login = () => {
     <>
       <div className='login-page'>
         {loading && <Spinner />}
+        <div className='sub-login-page'>
+        <img src={require('../images/expense-guide-1.png')} alt="expense"/>
         <div className='login-container'>
-          <h1 style={{ color: "white", paddingLeft: "3.8ch", paddingBottom: "0ch" }}>Login</h1>
+          <h1 style={{ color: "black", paddingLeft: "3.8ch", paddingBottom: "0ch" }}>Login</h1>
           <Form
             name="normal_login"
             layout="vertical"
-
             className="login-form"
             initialValues={{ remember: true }}
             onFinish={submitHandler}
@@ -93,6 +94,7 @@ const Login = () => {
               <Link to="/register" style={{ marginLeft: "110px", color: "cyan" }}>    Register now !</Link>
             </Form.Item>
           </Form>
+        </div>
         </div>
       </div>
     </>
