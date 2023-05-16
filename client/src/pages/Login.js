@@ -6,6 +6,7 @@ import { Button, Checkbox, Form, Input, message } from 'antd';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
 const Login = () => {
+  const baseURL = 'http://localhost:5050'
   const [loading, setloading] = useState(false);
   const navigate = useNavigate();
   const submitHandler = async (values) => {
@@ -16,7 +17,7 @@ const Login = () => {
     }
     try {
       setloading(true);
-      const response = await axios.post("http://localhost:5050/user/login", data);
+      const response = await axios.post(baseURL+'/user/login', data);
       setloading(false);
       console.log(response);
       if (response.data.message === "Incorrect password") {

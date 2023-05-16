@@ -1,5 +1,6 @@
 .sub-menu-wrap{
     position: absolute;
+    z-index: 9999;
     top:100%;
     right: 3%;
     height: 210px;

@@ -77,7 +77,7 @@ const Register = () => {
             <div className='register-page'>
                 {loading && < Spinner />} 
                 <div className='register-container'>
-                   <h1 style={{color:"white",paddingLeft:"180px"}}>Register</h1> 
+                   <h1 style={{color:"black",paddingLeft:"180px",paddingTop:'2ch'}}>Register</h1> 
                 
                 <Form
 
