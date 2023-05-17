@@ -1,6 +1,8 @@
 .login-page{
     display: grid;
-    border: #ffffff 2px solid;
+    /* border-radius: 10px; */
+    
+    border: #53b5b980 10px solid;
     justify-content: center;
     align-items: center;
     height: 100vh;

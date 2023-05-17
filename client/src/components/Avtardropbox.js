@@ -12,7 +12,7 @@ const Avtardropbox = () => {
   },[])
 
   function logouthandler (){
-    console.log('logouthandler');
+    // console.log('logouthandler');
     localStorage.removeItem('user');
     navigate('/login');
     message.success('Successfully Logged out');

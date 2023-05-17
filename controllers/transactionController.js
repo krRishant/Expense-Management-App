@@ -5,7 +5,7 @@ const addTransaction = async (req,res) => {
     try {
             const transaction = await transactionModel(req.body);
             const result = await transaction.save();
-            console.log(result);
+            // console.log(result);
             res.status(201).json({
                 transactionid: result._id,
                 success: true,
@@ -42,7 +42,7 @@ const deleteTransaction = async (req,res) => {
             _id: req.body.transactionid,
             userid: req.body.userid
         });
-        console.log(result);
+        // console.log(result);
         res.status(200).json({
             trasactionid:result._id,
             success: true,

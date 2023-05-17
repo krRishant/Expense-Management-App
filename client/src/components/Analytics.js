@@ -1,5 +1,6 @@
 import React from "react";
 import { Progress } from "antd";
+// console.log()
 const Analytics = ({ allTransection }) => {
     
     // category
@@ -123,7 +124,7 @@ const Analytics = ({ allTransection }) => {
                                     )
                                     .reduce((acc, transaction) => acc + transaction.amount, 0);
                                 
-                                console.log(amount);
+                                // console.log(amount);
                                 return (
                                         <div className="card" style={{height:"10vh",width:"35vb"}}>
                                             <div className="card-body">
@@ -146,7 +147,7 @@ const Analytics = ({ allTransection }) => {
                         <div className="xyz-p-container" >
                             {categories.map((category) => {
                                 
-                                console.log( category ,allTransection);
+                                // console.log( category ,allTransection);
                                 const amount = allTransection
                                     .filter(
                                         (transaction) =>
@@ -154,7 +155,7 @@ const Analytics = ({ allTransection }) => {
                                             transaction.category === category
                                     )
                                 
-                                 console.log(amount);
+                                //  console.log(amount);
                                 const value =amount.reduce((acc, transaction) => acc + transaction.amount, 0);
                                 return (
                                      (

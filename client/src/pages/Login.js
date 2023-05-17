@@ -6,11 +6,13 @@ import { Button, Checkbox, Form, Input, message } from 'antd';
 import axios from 'axios';
 import Spinner from '../components/Spinner';
 const Login = () => {
+
+
   const baseURL = 'http://localhost:5050'
   const [loading, setloading] = useState(false);
   const navigate = useNavigate();
   const submitHandler = async (values) => {
-    console.log('Success:', values);
+    // console.log('Success:', values);
     const data = {
       email: values.username,
       password: values.password
@@ -19,7 +21,7 @@ const Login = () => {
       setloading(true);
       const response = await axios.post(baseURL+'/user/login', data);
       setloading(false);
-      console.log(response);
+      // console.log(response);
       if (response.data.message === "Incorrect password") {
         message.error("Incorrect password");
       } else {

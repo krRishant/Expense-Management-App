@@ -10,7 +10,8 @@ import Spinner from '../components/Spinner';
 import { AreaChartOutlined, DeleteOutlined, EditOutlined, FileAddOutlined, UnorderedListOutlined } from '@ant-design/icons';
 import Analytics from '../components/Analytics';
 const { RangePicker } = DatePicker;
-
+ console.log()
+ 
 const Home = () => {
   // const t_id = "";
   const [loading, setloading] = useState(false);
@@ -51,7 +52,7 @@ const Home = () => {
       }else{
         const trasc_id = await axios.post(baseUrl + '/addtransaction', { ...value, userid: userId._id });
         sett_id(trasc_id.data.transactionid);
-        console.log(trasc_id.data.transactionid);
+        // console.log(trasc_id.data.transactionid);
         setloading(false);
         message.success("Transaction added Successfully");
       }
@@ -205,14 +206,14 @@ const Home = () => {
             />
           </div>
           <div>
-            <button className='btn' onClick={() => setshowModel(true)}><FileAddOutlined /></button>
+            <button className='btn' onClick={() => { setEditdata(null); setshowModel(true)}}><FileAddOutlined /></button>
           </div> 
         </div>
         <Modal 
         title={Editdata ? "Edit Transaction" : "Add Transaction"} open={showModel} onCancel={() => setshowModel(false)}
           cancelButtonProps={{ style: { display: 'none' } }} okButtonProps={{ style: { display: 'none' } }} >
           <Form name='Add Transaction' layout="vertical" style={{ fontWeight: "bolder" }} onFinish={handleSubmit}
-            initialValues={Editdata}
+             initialValues={Editdata}
           >
             <Form.Item label="Amount" name="amount" >
               <Input type='text' />
