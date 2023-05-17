@@ -101,7 +101,7 @@ const Home = () => {
     try {
       setloading(true);
       const user = JSON.parse(localStorage.getItem('user'));
-      console.log(user._id)
+      // console.log(user._id)
       const result = await axios.post("http://localhost:5050/transaction/gettransaction", {
         userid: user._id,
         frequency: frequency,
@@ -111,7 +111,7 @@ const Home = () => {
       })
       setloading(false);
       setalldata(result.data);
-      console.log(result.data);
+      // console.log(result.data);
     } catch (error) {
       setloading(false);
       console.log(error);

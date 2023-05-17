@@ -15,6 +15,32 @@ body{
 
 /* Login Page  */
 
-
+.analytic-page{
+  padding-top: 6ch;
+  height: 600px;
+  background-color:#53b5b95f ; 
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+}
+.xyz-p-container{
+  height: 42vh;
+  position:sticky;
+  border-radius: 5px;
+  overflow-y: auto ;
+  /* background-color: yellow; */
+}
+.xyz-p-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+.xyz-p{
+  padding-bottom: 3ch;
+  text-align: center;
+  margin-bottom: 1ch;
+  border-radius: 10px;
+  height: 30px;
+  background-color: #fff;
+  width: 34vb;
+}
 
 /* Login Page  */
