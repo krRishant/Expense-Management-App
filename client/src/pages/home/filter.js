@@ -28,7 +28,7 @@ const Filter = () => {
 
     }
   return (
-    <div>
+    <>
         <div className='FilterBox'>
             {loading && <Spinner />}
             <div>
@@ -80,7 +80,7 @@ const Filter = () => {
 
 
         </Modal>
-    </div>
+    </>
   )
 }
 export default Filter

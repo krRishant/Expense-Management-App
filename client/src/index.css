@@ -1,15 +1,17 @@
 *{
   padding: 0%;
   margin: 0%;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .content{
   background-color: #ffffff;
-  height: 85vh;
+  height: 78vh;
 }
 
-
+body{
+  color: #53b6b9
+}
 
 /* Login Page  */
 
